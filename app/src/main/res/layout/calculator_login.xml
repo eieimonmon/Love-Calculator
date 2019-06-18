@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <TextView
+            android:id="@+id/txtcrushname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textColor="@color/colorwhite"
+            android:textSize="28sp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Love "
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textColor="@color/colorwhite"
+            android:textSize="32sp"
+            />
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" ..."
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:textColor="@color/colorwhite"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+       app:layout_constraintTop_toBottomOf="@id/linear1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/txtpercent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="100%"
+            android:textColor="@color/colorwhite"
+            android:textSize="42sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Love is in the Air Drop"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textColor="@color/colorwhite"
+            android:textSize="28sp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnagain"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="Calculate Again"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="33sp"
+        android:background="@drawable/btn_style"
+        android:textColor="@color/colorwhite"
+        android:fontFamily="seriff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear2"/>
+</android.support.constraint.ConstraintLayout>
